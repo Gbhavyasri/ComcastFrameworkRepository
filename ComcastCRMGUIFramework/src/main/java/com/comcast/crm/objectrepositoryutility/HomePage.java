@@ -13,7 +13,8 @@ public class HomePage {
  	   this.driver=driver;
 		    PageFactory.initElements(driver, this);
 	    }
-    
+    @FindBy(linkText="Documents")
+    private WebElement documentLink;
     @FindBy(linkText="Products")
     private WebElement productLink;
     @FindBy(xpath="//a[text()='Organizations']")
