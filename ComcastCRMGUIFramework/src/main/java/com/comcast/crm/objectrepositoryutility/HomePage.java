@@ -14,7 +14,8 @@ public class HomePage {
 		    PageFactory.initElements(driver, this);
 	    }
     
-    
+    @FindBy(linkText="Products")
+    private WebElement productLink;
     @FindBy(xpath="//a[text()='Organizations']")
     private WebElement orgLink;
     @FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
